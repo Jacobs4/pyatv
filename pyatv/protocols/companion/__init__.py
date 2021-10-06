@@ -251,7 +251,7 @@ class CompanionAPI(
 
         # Wait for initial media control event to be received, to ensure
         # at least the basic information is in place (e.g. available controls)
-        await asyncio.wait_for(self._initial_event_recevied.wait(), timeout=5.0)
+        # await asyncio.wait_for(self._initial_event_recevied.wait(), timeout=5.0)
 
     async def _send_command(
         self,
